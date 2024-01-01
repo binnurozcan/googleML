@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/anaRenk"
+    tools:context=".giris">
+
+    <Button
+        android:id="@+id/fotoBtn"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:background="@drawable/scanner"
+        android:textColorHighlight="@color/anaRenk"
+        android:textColorLink="@color/anaRenk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <ImageView
+        android:id="@+id/girisIkon"
+        android:layout_width="216dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        app:srcCompat="@drawable/giris" />
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Ne Yiyoruz ?"
+        android:textColor="#64B4F5"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/girisIkon"
+        app:layout_constraintEnd_toEndOf="@+id/girisIkon"
+        app:layout_constraintStart_toStartOf="@+id/girisIkon" />
+
+    <TextView
+        android:id="@+id/binnurozcan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="Binnur Özcan"
+        app:layout_constraintEnd_toEndOf="@+id/girisIkon"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/girisIkon"
+        app:layout_constraintTop_toBottomOf="@+id/girisIkon" />
+
+    <TextView
+        android:id="@+id/projeAd"
+        android:layout_width="395dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="232dp"
+        android:text="Gıda Güvenliği ve Bilinçliliğini Artırmak İçin Teknoloji Tabanlı Bir  Yaklaşım: Gıda Etiketlerinin Otomatik Analizi "
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/girisIkon"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/girisIkon"
+        app:layout_constraintTop_toBottomOf="@+id/girisIkon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
