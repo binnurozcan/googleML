@@ -23,8 +23,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //init UI view
-
+        // UI elemanlarını başlatma
         inputImageBtn = findViewById(R.id.inputImageBtn);
         recognizeTextBtn = findViewById(R.id.recognizeTextBtn);
         imageIv = findViewById(R.id.imageIv);
@@ -140,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onFailure(@NonNull Exception e) {
                             progressDialog.dismiss();
                             Log.e(TAG, "onFailure:", e);
-                            Toast.makeText(MainActivity.this, "failed recognizing text due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Metin bulunamadı: " + e.getMessage(), Toast.LENGTH_SHORT).show();
 
                         }
                     });
@@ -148,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             progressDialog.dismiss();
             Log.e(TAG, "recognizeTextFromImage: ", e);
-            Toast.makeText(this, "resim hazirlanamadi:" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Resim hazirlanamadi:" + e.getMessage(), Toast.LENGTH_SHORT).show();
 
 
         }
@@ -307,6 +309,7 @@ public class MainActivity extends AppCompatActivity {
             break;
         }
     }
+
 }
 
 

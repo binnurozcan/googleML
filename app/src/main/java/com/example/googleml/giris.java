@@ -22,8 +22,7 @@ public class giris extends AppCompatActivity {
                 finish();
 
             }
-        }, 3000); //5sn
-
+        }, 3000); // 3sn
 
     }
 }
